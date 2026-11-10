@@ -228,7 +228,7 @@ def main():
     login_parser.set_defaults(func=login)
 
     # 1. Sous-commande USERS
-    user_parser = subparsers.add_parser("users", help="Gestion des utilisateurs (Admin uniquement)")
+    user_parser = subparsers.add_parser("user", help="Gestion des utilisateurs (Admin uniquement)")
     user_sub = user_parser.add_subparsers(dest="action", required=True)
     
     user_create = user_sub.add_parser("create", help="Créer un utilisateur")
